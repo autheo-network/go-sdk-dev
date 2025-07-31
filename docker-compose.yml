@@ -1,11 +1,13 @@
 version: '3.8'
 
 services:
-  go-solc-env:
+  go-sdk-env:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: go-solc-container
+      secrets:
+        - github_token
+    container_name: go-sdk-container
     volumes:
       - ./code:/go/src/app
     working_dir: /go/src/app
@@ -16,3 +18,7 @@ services:
     dns:
       - 8.8.8.8
       - 1.1.1.1
+
+secrets:
+  github_token:
+    file: ./github_token
