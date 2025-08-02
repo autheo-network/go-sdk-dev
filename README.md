@@ -41,6 +41,7 @@ docker exec -it go-sdk-container sh     # Login to the container to use CLI
 Run examples provided by the Autheo team:
 ```
 docker exec -it go-sdk-container sh     # Login to the container to use CLI, if you not already
+```
 Alternatively, if you use VS Code Remote Explorer Extension
 1. Click on the Remote Explorer Extension in the left menu bar in VS Code
 2. You should see the Container go-sdk-container under the Dev Containers drop-down
@@ -50,7 +51,7 @@ Alternatively, if you use VS Code Remote Explorer Extension
 6. Expand the go folder to view go/src/app to see go-sdk and go-sdk-examples github repo already cloned
 7. You can open a terminal in this new VS Code Window which is a terminal inside of the Container
 8. Run the following in the terminal to execute an Autheo provided example
-```
+
 ```
 cd code 	            # Start your project here
 
