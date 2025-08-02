@@ -48,8 +48,6 @@ Alternatively, if you use VS Code Remote Explorer Extension
 8. Run the following in the terminal to execute an Autheo provided example
 
 ```
-cd code 	            # Start your project here
-
 cd go-sdk-examples/go   # Or use go-sdk examples
 go run main.go
 ```
