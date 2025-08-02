@@ -1,6 +1,11 @@
 #!/bin/sh
 
-export GITHUB_TOKEN=$(cat /run/secrets/github_token)
+export GITHUB_TOKEN=$(cat /run/secrets/github_token 2>/dev/null)
+
+if [ -z "$GITHUB_TOKEN" ]; then
+    echo "Error: github_token file is empty or not found!"
+    exit 1
+fi
 
 git config --global url."https://x-access-token:$GITHUB_TOKEN@github.com/".insteadOf "https://github.com/"
 
