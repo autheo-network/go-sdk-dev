@@ -32,15 +32,10 @@ Start developing Go code inside the container:
 1. Open VS Code or any preferred / popular IDE
 2. If VS Code, then download Remote Explorer, Remote Development, Remote SSH, Dev Containers and Remote Tunnels
 
-Access terminal inside the container:
+Access terminal inside the container and / or Run examples provided by the Autheo team:
 ```
 docker exec -it go-sdk-container sh     # Login to the container to use CLI
 
-```
-
-Run examples provided by the Autheo team:
-```
-docker exec -it go-sdk-container sh     # Login to the container to use CLI, if you not already
 ```
 Alternatively, if you use VS Code Remote Explorer Extension
 1. Click on the Remote Explorer Extension in the left menu bar in VS Code
