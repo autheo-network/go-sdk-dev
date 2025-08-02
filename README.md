@@ -30,9 +30,9 @@ solc --version    # Should be 0.8.20
 
 Start developing Go code:
 ```
-cd /go 	                    # Start your project here
+cd code 	            # Start your project here
 
-cd /go/go-sdk-examples/go   # Or use go-sdk examples
+cd go-sdk-examples/go   # Or use go-sdk examples
 go run main.go
 ```
 

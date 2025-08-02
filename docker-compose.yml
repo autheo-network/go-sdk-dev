@@ -10,6 +10,7 @@ services:
     container_name: go-sdk-container
     volumes:
       - ./code:/go/src/app
+      - ./github_token:/run/secrets/github_token:ro
     working_dir: /go/src/app
     stdin_open: true
     tty: true
