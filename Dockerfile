@@ -15,7 +15,7 @@ RUN curl -fsSL -o solc-amd64 "https://github.com/ethereum/solidity/releases/down
     mv solc-amd64 /usr/local/bin/solc
 
 # Working directory
-WORKDIR /go/src/app
+WORKDIR /root/go/src/app
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
